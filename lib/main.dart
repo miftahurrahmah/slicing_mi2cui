@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:slicing_mi2cui/LatRumahSakit/page/list_provinsi.dart';
 import 'package:slicing_mi2cui/LatihanSlicing/BottomNavigation.dart';
 import 'package:slicing_mi2cui/LatihanSlicing/Home.dart';
+import 'package:slicing_mi2cui/Vidio&audio/menu_utama_page.dart';
 import 'package:slicing_mi2cui/kamera&maps/pageUtama.dart';
+import 'package:slicing_mi2cui/Latihan/page_home.dart';
+import 'package:slicing_mi2cui/kamera&maps/page_maps.dart';
+import 'package:slicing_mi2cui/lat_audio/audio.dart';
 import 'package:slicing_mi2cui/screen_page/welcome_page.dart';
+import 'package:slicing_mi2cui/list_user/list_user.dart';
+
+import 'Vidio&audio/audio_player_page.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -35,9 +45,45 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PageBottomNavigationBar(),
+      home: PageProvinsi(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
+
+// class MyHomePage extends StatefulWidget {
+//   MyHomePage({Key? key, this.title}) : super(key: key);
+//
+//   final String? title;
+//
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
+//
+// class _MyHomePageState extends State<MyHomePage> {
+//   // Set URL and filename
+//   final String urlExample =
+//       "http://ia802609.us.archive.org/13/items/quraninindonesia/001AlFaatihah.mp3";
+//   final String nameExample = "Al-Fatihah";
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text(widget.title ?? 'Default Title'),
+//       ),
+//       body: Column(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         children: <Widget>[
+//           Text("Al Fatihah"),
+//           Container(
+//             margin: EdgeInsets.all(8.0),
+//             child: PlayerWidget(url: urlExample, fileName: nameExample),
+//           )
+//         ],
+//       ),
+//     );
+//   }
+// }
+
 
